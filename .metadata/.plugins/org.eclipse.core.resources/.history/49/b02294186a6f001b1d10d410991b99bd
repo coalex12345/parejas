@@ -1,0 +1,18 @@
+package lista_enlazada;
+
+public class Testlintaenlazada {
+
+	public static void main(String[] args) {
+		
+		Listaenlazada list = new Listaenlazada();
+		
+		
+		list.insertaralprincipio("maria");
+		list.insertaralprincipio("ricardo");
+		
+		list.verLista();
+		
+
+	}
+
+}

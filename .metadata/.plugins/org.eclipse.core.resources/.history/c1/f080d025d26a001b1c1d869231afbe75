@@ -1,0 +1,12 @@
+package pila_estatica;
+
+public class Test_pila_estatica {
+
+	public static void main(String[] args) {
+		//intanciamos una pila
+		Pila_estatica pila = new Pila_estatica();
+		
+
+	}
+
+}

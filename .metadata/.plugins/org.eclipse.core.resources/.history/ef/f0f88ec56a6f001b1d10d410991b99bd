@@ -1,0 +1,106 @@
+package lista_enlazada;
+/* una lista enlazada es una coleccion de nodos
+ * cada nodo tendra dos atributos:info,tiene la referencia a un objeto y enlace que tendra la referencia a otro nodo
+ * la lista siempre tendra una referencia al primer nodo que podemos llamar incio
+ * el final de la lista se sabe por que el campo enlace de tipo nodo contiene null*/
+public class Listaenlazada {
+
+	//atributos
+	private Nodo inicio;
+	//constructor
+	public Listaenlazada() {
+		
+		inicio = null;
+		
+	}
+	
+	/*  este metodo inserta un nodo al rpincipio de la lista
+	 * 
+	 *  
+	 *  */
+	public void insertaralprincipio(Object obj) {
+		//creamos un nuevo nodo y lo enlazamos con el primero
+		
+		Nodo nuevo = new Nodo(obj,inicio);
+		
+		//hacemos que inicio apunte al nuevo modo
+		
+		inicio = nuevo;
+		
+		
+	}
+	
+	
+	/**
+	 * muestra en pantalla el contenido de la lista
+	 */
+	
+	public void verLista() {
+		
+		//decalramos una referencia que sirve para recorrer la lista y que apunte en primer lugar al principio de la lista
+		
+		Nodo actual = inicio;
+		
+		//recorremos la lista
+		
+		while (actual != null) {
+			//llevamos a pantala la info
+			System.out.println(actual.info);
+			
+			//avamzamos al siguiente nodo
+			actual = actual.enlace;
+			
+		}
+		
+		
+		
+		
+	}
+	/**
+	 * retorno un valor que indica si al lista esta vacia
+	 */
+	
+	public boolean ListaVacia() {
+		return (inicio==null);
+	}
+	
+	
+	
+	
+	/**
+	 * el metodo inserta un nuevo nodo al final de la lista
+	 */
+	
+	public void insertarFinal(Object obj) {
+		//creamos un nuevo nodo
+		Nodo nuevo = new Nodo("Alex",null);
+		if (ListaVacia()==true) {
+			inicio=nuevo;
+								}
+		else {
+			//nos situamos en el ultimo nodo
+			
+			Nodo actual = inicio;
+			
+			while(actual.enlace != null) {
+			//avanzo al siguiente nodo
+				
+				actual=actual.enlace;}
+				
+			
+			//enlazamos el ultimo nodo con el nuevo
+			
+			actual.enlace = nuevo;
+			}
+
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}
