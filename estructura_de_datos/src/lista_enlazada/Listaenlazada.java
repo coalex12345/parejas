@@ -146,5 +146,44 @@ public class Listaenlazada {
 	
 	
 	
-}
+										}
+	/**
+	 * metodo que ahce una busqueda secuencial en la lista
+	 */
+	 public Nodo busqueda_while(Object buscado) {
+		 //nos situamos en el primer nodo de la lista
+		 Nodo actual = inicio;
+		 
+		 //recorremos la lista
+		 while(actual != null) {
+			 //comprobamos si buscado esta en la lista
+			 if (actual.info.equals(buscado)) {
+				 return actual;
+			 									}
+			 //avanzamos al sigueinte nodo
+			 actual = actual.enlace;
+		 }
+		 return null;//funciona con return actual porque si no seria null no saldria del while
+		 
+		 
+	 											}
+	 
+	 public Nodo busqueda_for(Object buscado) {
+		 
+		 for (Nodo actual = inicio; actual != null; actual=actual.enlace) {
+			 if (actual.info.equals(buscado)) {
+				 return actual;
+			 									}
+		 																		}
+		 return null;//return null
+		 
+		 
+		 
+		 
+	 }
+	
+	
+	
+	
+	
 }

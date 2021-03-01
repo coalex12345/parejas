@@ -14,8 +14,13 @@ public class prueba2 {
 		System.out.println("primera modificacion alex push modifica javi");
 		
 		System.out.println("segundo alex");
+<<<<<<< HEAD
 		
 		System.out.println("tercer cambio alex");
+=======
+                
+                System.out.println("Este es el tercer cambio de javi");
+>>>>>>> refs/remotes/origin/master
 	}
 
 }
