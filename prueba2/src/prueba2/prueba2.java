@@ -9,11 +9,11 @@ public class prueba2 {
 		System.out.println("hola mundo");
 		
 		System.out.println("hola mundo2");
-                
-                
-                System.out.println("primera modificacion alex push modifica javi");
-                
-                System.out.println("Primera modificacion javier ");
+		
+		
+		System.out.println("primera modificacion alex push modifica javi");
+		
+		System.out.println("segundo alex");
 	}
 
 }
